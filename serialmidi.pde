@@ -40,22 +40,4 @@ void draw() {
     }
   }
 }
-/*
-void serialEvent(Serial p)
-{
-  for (int i = 0; i < 3; i++) {
-    int inByte = port.read();
-    val[i] = inByte;
-    if (i == 0 && inByte < 128) {
-      i = 3;
-    }
-  }
-  if (val[0] == 128) {
-    println(val);
-    myBus.sendNoteOff(0, val[1], val[2]);
-  } else if (val[0] == 144) {
-    println(val);
-    myBus.sendNoteOn(0, val[1], val[2]);
-  }
-}
-*/
+
